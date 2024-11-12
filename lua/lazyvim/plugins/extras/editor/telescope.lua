@@ -5,7 +5,7 @@ if lazyvim_docs then
 end
 
 local build_cmd ---@type string?
-for _, cmd in ipairs({ "make", "cmake", "gmake" }) do
+for _, cmd in ipairs({ "cmake", "gmake", "make" }) do
   if vim.fn.executable(cmd) == 1 then
     build_cmd = cmd
     break
